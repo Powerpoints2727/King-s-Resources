@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Powerpoints - Kings Collection</title>
+    <title>Resources - Kings Collection</title>
     <style>
         body {
             background-color: #36393f;
@@ -128,7 +128,7 @@
     </nav>
     <div class="container">
         <div class="content">
-            <h1>Powerpoints</h1>
+            <h1>Resources</h1>
             <ul id="fileList"></ul>
         </div>
         <div class="preview">
@@ -199,7 +199,7 @@
 
                     const downloadLink = document.createElement('a');
                     downloadLink.innerHTML = `<i class="fas fa-download"></i>`;
-                    downloadLink.href = `https://github.com/Assessments2727/Assessments/archive/refs/heads/main.zip`;
+                    downloadLink.href = `https://github.com/owerpoints2727/King-s-Resources/archive/refs/heads/main.zip`;
                     downloadLink.download = `${path}/${folder.name}.zip`;
                     downloadLink.title = "Download folder as zip";
 
@@ -235,7 +235,7 @@
 
         (async function() {
             const repoOwner = 'Powerpoints2727';
-            const repoName = 'Powerpoints';
+            const repoName = 'King-s-Resources';
             const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents`;
             await fetchFolderContents(apiUrl, document.getElementById('fileList'));
         })();
